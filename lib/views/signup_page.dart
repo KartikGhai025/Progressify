@@ -12,20 +12,22 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0XFFF5F9FD),
+      backgroundColor: Colors.black,//const Color(0XFFF5F9FD),
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
+
+        foregroundColor: Colors.black,
         elevation: 0,
-        toolbarHeight: kToolbarHeight - 10,
-        backgroundColor: const Color(0XFFF5F9FD),
+        // toolbarHeight: kToolbarHeight-10,
+        backgroundColor: Colors.black,//const Color(0XFFF5F9FD),
         automaticallyImplyLeading: false,
         title: const Padding(
-          padding: EdgeInsets.only(left: 19),
+          padding: EdgeInsets.only(left: 19, top: 10), // Added top padding
           child: Text(
             "Progressify",
             style: TextStyle(
               color: Color(0XFF0C54BE),
-              fontSize: 26,
+              fontSize: 40,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w700,
             ),
@@ -62,7 +64,7 @@ class SignupScreen extends StatelessWidget {
                   const TextSpan(
                     text: "Already have an account?",
                     style: TextStyle(
-                      color: Color(0XFF000000),
+                      color: Colors.white,
                       fontSize: 16,
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w400,

@@ -25,27 +25,27 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0XFFF5F9FD),
+      backgroundColor: Colors.black,//const Color(0XFFF5F9FD),
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
 
         foregroundColor: Colors.black,
         elevation: 0,
-        toolbarHeight: kToolbarHeight-10,
-        backgroundColor: const Color(0XFFF5F9FD),
+       // toolbarHeight: kToolbarHeight-10,
+        backgroundColor: Colors.black,//const Color(0XFFF5F9FD),
         automaticallyImplyLeading: false,
         title: const Padding(
-          padding: EdgeInsets.only(left: 19),
-          child: Text(
-            "Progressify",
-            style: TextStyle(
-              color: Color(0XFF0C54BE),
-              fontSize: 26,
-              fontFamily: 'Poppins',
-              fontWeight: FontWeight.w700,
-            ),
-          ),
+      padding: EdgeInsets.only(left: 19, top: 10), // Added top padding
+      child: Text(
+        "Progressify",
+        style: TextStyle(
+          color: Color(0XFF0C54BE),
+          fontSize: 40,
+          fontFamily: 'Poppins',
+          fontWeight: FontWeight.w700,
         ),
+      ),
+    ),
       ),
       body: Container(
         width: double.maxFinite,
@@ -86,7 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     const TextSpan(
                       text: "Don't have an account? ",
                       style: TextStyle(
-                        color: Color(0XFF000000),
+                        color: Colors.white,
                         fontSize: 16,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w400,
